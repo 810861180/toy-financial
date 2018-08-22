@@ -7,6 +7,8 @@
         <headline1 :headlineOne="headline_1"></headline1>
         <headline2 :headlineTwo="headline_2"></headline2>
         <headline3></headline3>
+        <headline4 :headlineFour="headline_4"></headline4>
+        <customer></customer>
     </div>
 </template>
 
@@ -18,6 +20,8 @@ import list1 from '../../components/list_1.vue'
 import headline1 from '../../components/headline_1.vue'
 import headline2 from '../../components/headline_2.vue'
 import headline3 from '../../components/headline_3.vue'
+import headline4 from '../../components/headline_4.vue'
+import customer from '../../components/customer.vue'
 
 export default {
     components: {
@@ -27,7 +31,9 @@ export default {
         list1,
         headline1,
         headline2,
-        headline3
+        headline3,
+        headline4,
+        customer
     },
     data() {
         return {
@@ -58,6 +64,20 @@ export default {
                     {id:1, url:'https://img12.360buyimg.com/jrpmobile/jfs/t21691/233/2361780032/59932/8cb4ce42/5b5066e3Nb460c234.jpg?width=335&height=421'},
                     {id:2, url:'https://img12.360buyimg.com/jrpmobile/jfs/t24547/3/1113130809/37409/3e7d5038/5b5066f2N360c723a.jpg?width=335&height=421'},
                     {id:3, url:'https://img12.360buyimg.com/jrpmobile/jfs/t22696/182/1419336545/44627/3e46409d/5b5fcdb3N4c31020e.jpg?width=335&height=421'}
+                ]
+            },
+            headline_4:{
+                headline_title:'有车有钱',
+                url:[
+                    {id:1, url:'https://img12.360buyimg.com/jrpmobile/jfs/t22774/46/1735806175/76049/3a394283/5b690b9aN054ad12e.png?width=375&height=233'},
+                    {id:2, url:'https://img12.360buyimg.com/jrpmobile/jfs/t14215/140/1757206721/24186/81b4e53c/5a56c877Nee6cfc4d.jpg?width=375&height=233'}
+                ],
+                listUrl:[
+                    {id:1, span:'旅游', url:'https://img12.360buyimg.com/jrpmobile/jfs/t12799/50/704102454/5247/19eac80a/5a4f2622Nc4aca701.png?width=90&height=90'},
+                    {id:2, span:'医美', url:'https://img12.360buyimg.com/jrpmobile/jfs/t16033/196/1306232362/4705/4c678227/5a4f265bN66ef5ae8.png?width=90&height=90'},
+                    {id:3, span:'房抵贷', url:'https://img12.360buyimg.com/jrpmobile/jfs/t13051/63/2559290659/4702/e4068917/5a4f2693N937f1905.png?width=88&height=88'},
+                    {id:4, span:'驾校', url:'https://img12.360buyimg.com/jrpmobile/jfs/t15133/16/1440686097/5786/1b038e03/5a4f26bfN03ed1f66.png?width=90&height=90'},
+                    {id:5, span:'分期用', url:'https://img12.360buyimg.com/jrpmobile/jfs/t14896/125/1435676873/3668/a8b392f7/5a4f26edN6cdfda66.png?width=88&height=88'}
                 ]
             }
         }

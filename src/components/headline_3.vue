@@ -1,6 +1,7 @@
 <template>
-    <div>
-        <div>
+    <div class="div">
+        <div class="headline-color"></div>
+        <div class="add">
             <div class="headline_title">- {{ headline_3.headline_title }} -</div>
         </div>
     </div>
@@ -18,6 +19,15 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+    .div{
+        text-align: center;
+    }
+    .add{
+        display: block;
+    }
+    .headline_title{
+        float: left;
+        display: inline;
+    }
 </style>

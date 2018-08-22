@@ -12,6 +12,10 @@ export default new Router({
     {
       path: '/login',
       component: resolve => require(['@/views/layout/login'], resolve)
+    },
+    {
+      path: '/make',
+      component: resolve => require(['@/views/content/make'], resolve)
     }
   ]
 })

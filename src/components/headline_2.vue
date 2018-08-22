@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="color"></div>
+        <div class="headline-color"></div>
         <div class="div">
             <div class="headline_title">- {{ headlineTwo.title }} -</div>
             <div class="add">更多尖货 ></div>
@@ -21,12 +21,7 @@ export default {
 </script>
 
 <style scoped>
-    .color{
-        float: left;
-        width: 100%;
-        height: 10px;
-        background: #F2F2F2;
-    }
+
     .div{
         position: relative;
         width: 100%;
