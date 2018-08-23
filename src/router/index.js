@@ -16,6 +16,18 @@ export default new Router({
     {
       path: '/make',
       component: resolve => require(['@/views/content/make'], resolve)
+    },
+    {
+      path: '/borrow',
+      component: resolve => require(['@/views/content/borrow'], resolve)
+    },
+    {
+      path: '/save',
+      component: resolve => require(['@/views/content/save'], resolve)
+    },
+    {
+      path: '/banking',
+      component: resolve => require(['@/views/content/banking'], resolve)
     }
   ]
 })

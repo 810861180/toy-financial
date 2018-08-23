@@ -3,7 +3,7 @@
         <div class="rowmo">
             <div class="rowmoDiv" v-for="item in rowmos" :key="item.id">
                 <div><img :src="item.url" alt="" class="rowmoImg"></div>
-                <span class="span1" :style="{color: item.color1}">{{ item.span1 }}</span>
+                <span class="span1" :style="{color: item.color1, fontSize: item.size}">{{ item.span1 }}</span>
                 <span class="span2" :style="{color: item.color2}">{{ item.span2 }}</span>
             </div>
         </div>

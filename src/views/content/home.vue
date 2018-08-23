@@ -15,13 +15,13 @@
 <script>
 import herdss from '../layout/herdss.vue'
 import footers from '../layout/footers.vue'
-import carousel from '../../components/carousel.vue'
-import list1 from '../../components/list_1.vue'
-import headline1 from '../../components/headline_1.vue'
-import headline2 from '../../components/headline_2.vue'
-import headline3 from '../../components/headline_3.vue'
-import headline4 from '../../components/headline_4.vue'
-import customer from '../../components/customer.vue'
+import carousel from '../../components/home/carousel.vue'
+import list1 from '../../components/home/list_1.vue'
+import headline1 from '../../components/home/headline_1.vue'
+import headline2 from '../../components/home/headline_2.vue'
+import headline3 from '../../components/home/headline_3.vue'
+import headline4 from '../../components/home/headline_4.vue'
+import customer from '../../components/home/customer.vue'
 
 export default {
     components: {
@@ -37,17 +37,20 @@ export default {
     },
     data() {
         return {
-            carImg:[
-                {id:1, url:'https://img12.360buyimg.com/jrpmobile/jfs/t22663/237/2194255428/34052/d6b0becc/5b76c65aNbe7ff324.jpg?width=750&height=320'},
-                {id:2, url:'https://img12.360buyimg.com/jrpmobile/jfs/t25492/85/642955199/63906/1b479ef7/5b76c663N50852751.jpg?width=750&height=320'},
-                {id:3, url:'https://img12.360buyimg.com/jrpmobile/jfs/t25168/132/666519589/42798/4d66e0d3/5b76c666N516b4c54.jpg?width=750&height=320'},
-                {id:4, url:'https://img12.360buyimg.com/jrpmobile/jfs/t23326/10/2196252723/43329/bb5475d8/5b76c66bNb0d81855.jpg?width=750&height=320'}
-            ],
+            carImg:{
+                height:'11rem',
+                url:[
+                    {id:1, url:'https://img12.360buyimg.com/jrpmobile/jfs/t22663/237/2194255428/34052/d6b0becc/5b76c65aNbe7ff324.jpg?width=750&height=320'},
+                    {id:2, url:'https://img12.360buyimg.com/jrpmobile/jfs/t25492/85/642955199/63906/1b479ef7/5b76c663N50852751.jpg?width=750&height=320'},
+                    {id:3, url:'https://img12.360buyimg.com/jrpmobile/jfs/t25168/132/666519589/42798/4d66e0d3/5b76c666N516b4c54.jpg?width=750&height=320'},
+                    {id:4, url:'https://img12.360buyimg.com/jrpmobile/jfs/t23326/10/2196252723/43329/bb5475d8/5b76c66bNb0d81855.jpg?width=750&height=320'}
+                ]
+            },
             rowmo:[
-                {id:1, url:'https://img12.360buyimg.com/jrpmobile/jfs/t3991/64/2521945388/12110/93c0139/58d1e462Ncf294123.png?width=132&height=132', span1:'优惠券', span2:'100-99券', color1:'', color2:'red'},
-                {id:2, url:'https://img12.360buyimg.com/jrpmobile/jfs/t5590/252/875247023/17343/946aa72c/59224650N0f7ffc92.png?width=132&height=132', span1:'领福利', span2:'', color1:'', color2:''},
-                {id:3, url:'https://img12.360buyimg.com/jrpmobile/jfs/t4393/329/2180608902/13217/c88c0cec/58ec9dcdN1534e2d7.png?width=132&height=132', span1:'抢钢镚', span2:'', color1:'red', color2:''},
-                {id:4, url:'https://img12.360buyimg.com/jrpmobile/jfs/t5488/298/1036263348/12073/b4f4de97/590ac8e8Ne9def22e.png?width=135&height=135', span1:'白条提额', span2:'', color1:'', color2:''}
+                {id:1, url:'https://img12.360buyimg.com/jrpmobile/jfs/t3991/64/2521945388/12110/93c0139/58d1e462Ncf294123.png?width=132&height=132', span1:'优惠券', span2:'100-99券', color1:'', color2:'red', siez:''},
+                {id:2, url:'https://img12.360buyimg.com/jrpmobile/jfs/t5590/252/875247023/17343/946aa72c/59224650N0f7ffc92.png?width=132&height=132', span1:'领福利', span2:'', color1:'', color2:'', siez:''},
+                {id:3, url:'https://img12.360buyimg.com/jrpmobile/jfs/t4393/329/2180608902/13217/c88c0cec/58ec9dcdN1534e2d7.png?width=132&height=132', span1:'抢钢镚', span2:'', color1:'red', color2:'', siez:''},
+                {id:4, url:'https://img12.360buyimg.com/jrpmobile/jfs/t5488/298/1036263348/12073/b4f4de97/590ac8e8Ne9def22e.png?width=135&height=135', span1:'白条提额', span2:'', color1:'', color2:'', siez:''}
             ],
             headline_1:{
                 headline_title:'理财精选',
@@ -90,7 +93,6 @@ export default {
     .home{
         width: 100%;
         margin-top: 3.125rem;
-        background: #F2F2F2;
         position: relative;
     }
 </style>
