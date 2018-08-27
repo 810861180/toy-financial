@@ -47,7 +47,7 @@ export default {
     .top_img{
         width: 100%;
         z-index: 999;
-        position: absolute;
+        position: fixed;
         top: 0;
     }
     .top_img img{

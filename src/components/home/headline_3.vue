@@ -8,7 +8,7 @@
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide" v-for="item in headline_3.url" :key="item.id">
-                    <img :src="item.url">
+                    <img :src="item.url" class="simg">
                 </div>
             </div>
         </div>
@@ -35,7 +35,14 @@ export default {
     },
     mounted() {
         var mySwiper = new Swiper('.swiper-container', {
-          freeMode : true,
+            width: 125,
+            slidesPerView :'auto',
+            direction:'horizontal',
+            grabCursor:true,
+            autoplayDisableOnInteraction:false,
+            mousewheelControl:true,
+            autoHeight:true,
+            speed:1000
         })
     }
 }
@@ -54,15 +61,15 @@ export default {
     }
     .swiper-container{
         width: 100%;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
     .swiper-slide{
         width: 7.8125rem!important;
-        height: auto!important;
+        /* height: auto!important; */
         margin-left: 1rem;
         padding-bottom: 2.1rem;
     }
-    .swiper-slide img{
-        width: 100%;
+    .simg{
+        width: 7.8125rem!important;
     }
 </style>
