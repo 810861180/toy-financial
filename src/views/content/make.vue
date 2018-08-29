@@ -13,16 +13,13 @@
 </template>
 
 <script>
-import top from '../../components/make/top.vue'
-import makeList1 from '../../components/make/makeList_1.vue'
-import makeCard from '../../components/make/make_card.vue'
-import makeCard2 from '../../components/make/make_card_2.vue'
+
 export default {
     components:{
-        top,
-        makeList1,
-        makeCard,
-        makeCard2
+        top: (resolve) => { require(['../../components/make/top.vue'], resolve)},
+        makeList1: (resolve) => { require(['../../components/make/makeList_1.vue'], resolve)},
+        makeCard: (resolve) => { require(['../../components/make/make_card.vue'], resolve)},
+        makeCard2: (resolve) => { require(['../../components/make/make_card_2.vue'], resolve)}
     }
 }
 </script>

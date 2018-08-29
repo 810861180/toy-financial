@@ -52,7 +52,7 @@ export default {
     .swiper-container{
         width: 100%;
         height: 100%;
-        overflow: visible;
+        overflow: hidden;
     }
     .swiper-wrapper{
         width: 100%;

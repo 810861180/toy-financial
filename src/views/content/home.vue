@@ -13,27 +13,28 @@
 </template>
 
 <script>
-import herdss from '../layout/herdss.vue'
-import footers from '../layout/footers.vue'
-import carousel from '../../components/home/carousel.vue'
-import list1 from '../../components/home/list_1.vue'
-import headline1 from '../../components/home/headline_1.vue'
-import headline2 from '../../components/home/headline_2.vue'
-import headline3 from '../../components/home/headline_3.vue'
-import headline4 from '../../components/home/headline_4.vue'
-import customer from '../../components/home/customer.vue'
+// const herdss = resolve => { resolve(require('../layout/herdss.vue')) }
+// const footers = resolve => { resolve(require('../layout/footers.vue')) }
+// const carousel = resolve => { resolve(require('../../components/home/carousel.vue')) }
+// const list1 = resolve => { resolve(require('../../components/home/list_1.vue')) }
+// const headline1 = resolve => { resolve(require('../../components/home/headline_1.vue')) }
+// const headline2 = resolve => { resolve(require('../../components/home/headline_2.vue')) }
+// const headline3 = resolve => { resolve(require('../../components/home/headline_3.vue')) }
+// const headline4 = resolve => { resolve(require('../../components/home/headline_4.vue')) }
+// const customer = resolve => { resolve(require('../../components/home/customer.vue')) }
 
 export default {
     components: {
-        herdss,
-        footers,
-        carousel,
-        list1,
-        headline1,
-        headline2,
-        headline3,
-        headline4,
-        customer
+        herdss: (resolve) => { require(['../layout/herdss.vue'], resolve)},
+        footers: (resolve) => { require(['../layout/footers.vue'], resolve)},
+        carousel: (resolve) => { require(['../../components/home/carousel.vue'], resolve)},
+        list1: (resolve) => { require(['../../components/home/list_1.vue'], resolve)},
+        headline1: (resolve) => { require(['../../components/home/headline_1.vue'], resolve)},
+        headline2: (resolve) => { require(['../../components/home/headline_2.vue'], resolve)},
+        headline3: (resolve) => { require(['../../components/home/headline_3.vue'], resolve)},
+        headline4: (resolve) => { require(['../../components/home/headline_4.vue'], resolve)},
+        customer: (resolve) => { require(['../../components/home/customer.vue'], resolve)}
+
     },
     data() {
         return {
