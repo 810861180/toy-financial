@@ -6,6 +6,8 @@
 </template>
 
 <script>
+
+
 import index from './views/layout/index.vue'
 
 export default {

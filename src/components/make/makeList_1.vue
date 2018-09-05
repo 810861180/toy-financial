@@ -90,7 +90,7 @@ export default {
     }
     .left{
         height: 100%;
-        width: 7.65rem;
+        width: 36.5%;
         border-radius: .1875rem;
         display: inline-block;
         background: rgb(255, 98,23);
@@ -123,7 +123,7 @@ export default {
     }
     .right{
         height: 100%;
-        width: 13.5rem;
+        width: 61.5%;
         float: right;
         border-radius: .1875rem;
         background: rgb(68, 101, 245);
